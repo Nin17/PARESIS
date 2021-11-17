@@ -80,7 +80,7 @@ class Detector:
             sigmaSource=effectiveSourceSize/2.355 #from FWHM to std dev
             incidentWave=gaussian_filter(incidentWave, sigmaSource,mode='wrap')
         intensityBeforeDetection=resize(incidentWave, self.myDimensions[0],self.myDimensions[1])
-        seed       = int(np.floor(time.time()*100%(2**32-1)))
+        seed       = int(time.time()*100%(2**32-1))
         rs         = np.random.RandomState(seed)
         if self.myPSF!=0:
             detectedImage=gaussian_filter(intensityBeforeDetection, self.myPSF,mode='wrap')
@@ -145,6 +145,6 @@ def resize(imageToResize,sizeX, sizeY):
     
     for x0 in range(sizeX):
         for y0 in range(sizeY):
-            resizedImage[x0,y0]=np.sum(imageToResize[int(np.floor(x0*sampFactor)):int(np.floor(x0*sampFactor+sampFactor)),int(np.floor(y0*sampFactor)):int(np.floor(y0*sampFactor+sampFactor))])
+            resizedImage[x0,y0]=np.sum(imageToResize[int(x0*sampFactor):int(x0*sampFactor+sampFactor),int(y0*sampFactor):int(y0*sampFactor+sampFactor)])
             
     return resizedImage
