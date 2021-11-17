@@ -301,5 +301,3 @@ class AnalyticalSample(Sample):
             
         # print('Finished setting wave through', self.myName)
         return disturbedIntensity, disturbedPhi
-        
-        

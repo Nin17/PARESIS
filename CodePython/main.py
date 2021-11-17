@@ -102,8 +102,3 @@ if __name__ == "__main__":
     experiment.saveAllParameters(time0,exp_dict)
     
     print("\nfini")
-    
-
-
-
-        
