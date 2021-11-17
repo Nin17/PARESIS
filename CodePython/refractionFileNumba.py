@@ -126,5 +126,3 @@ def fastloopNumba(Nx, Ny,intensityRefracted,intensityRefracted2,Dy,Dx,DxFloor, D
                         intensityRefracted2[inew-1,jnew-1]+=Iij*Dxtmp*Dytmp
                         intensityRefracted2[inew,jnew-1]+=Iij*(1-abs(Dxtmp))*abs(Dytmp)
     return intensityRefracted2
-
-

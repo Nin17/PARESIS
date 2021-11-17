@@ -36,7 +36,6 @@ def generateContrastPhantom(dimX, dimY, pixsize, angle):
     smallTubesRadiuspixInt=int(smallTubesRadiuspix+2) #pixEntier
     supportRadiuspix=supportRadius/pixsize
     supportRadiuspixInt=int(supportRadiuspix+2)
-    
     origin=dimY/2-16/pixsize #pix
     
     if origin<0:

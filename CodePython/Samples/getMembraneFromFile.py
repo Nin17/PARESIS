@@ -44,8 +44,9 @@ def getMembraneSegmentedFromFile(sample,dimX,dimY,pixSize,overSamp, pointNum):
     
     if sample.myMembraneFile.split('/')[-1]=='CuSn.txt':
         corrFactor=sample.myMeanSphereRadius/4.57 #to adapt the scale to the mean sphere radius desired
-        membraneSizeinFilex=8102*corrFactor+sample.myMeanSphereRadius
-        membraneSizeinFiley=9740*corrFactor+sample.myMeanSphereRadius
+        membraneSizeinFilex=8102*corrFactor+sample.myMeanSphereRadius #??? int(np.floor(8102))
+        membraneSizeinFiley=9740*corrFactor+sample.myMeanSphereRadius #??? int(np.floor(9740))
+
     else: 
         raise Exception("Enter segmented membrane size ")
     
