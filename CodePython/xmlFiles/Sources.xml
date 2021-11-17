@@ -2,7 +2,7 @@
     <source>
         <name>id17</name>
         <myType>Monochromatic</myType>
-        <mySize unit="um">10</mySize>
+        <mySize unit="um">100</mySize>
         <myEnergy unit="kev">52</myEnergy>
     </source>
     
