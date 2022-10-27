@@ -1,0 +1,29 @@
+{
+    "Source": [
+        {
+            "name": "id17",
+            "size": 1e-05,
+            "how": "Monochromatic"
+        },
+        {
+            "name": "simap",
+            "size": 8e-06,
+            "how": "spekpy",
+            "voltage": 40,
+            "target_material": "Mo",
+            "exit_window_material": "Be",
+            "exit_window_thickness": 2e-07,
+            "energy_sampling": 0.5
+        },
+        {
+            "name": "clinic",
+            "size": 2e-05,
+            "how": "spekpy",
+            "voltage": 55,
+            "target_material": "W",
+            "exit_window_material": "Al",
+            "exit_window_thickness": 2.5e-06,
+            "energy_sampling": 0.5
+        }
+    ]
+}

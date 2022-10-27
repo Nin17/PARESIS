@@ -1,0 +1,63 @@
+{
+    "Detector": [
+        {
+            "name": "sCMOS_ESRF",
+            "dimensions": [
+                200.0,
+                200.0
+            ],
+            "pixel_size": [
+                12e-6,
+                12e-6
+            ],
+            "psf": 1.0
+        },
+        {
+            "name": "sCMOS_ESRF2",
+            "dimensions": [
+                500.0,
+                1500.0
+            ],
+            "pixel_size": [
+                24e-6,
+                24e-6
+            ],
+            "psf": 1.2
+        },
+        {
+            "name": "flatPanelSimap",
+            "dimensions": [
+                300.0,
+                300.0
+            ],
+            "pixel_size": [
+                50e-6,
+                50e-6
+            ],
+            "psf": 1.0,
+            "bin_thresholds": [
+                20.0,
+                30.0,
+                39.75
+            ],
+            "scintillator_material": "CsI",
+            "scintillator_thickness": 600.0
+        },
+        {
+            "name": "SPC",
+            "dimensions": [
+                500.0,
+                500.0
+            ],
+            "pixel_size": [
+                75e-6,
+                75e-6
+            ],
+            "bin_thresholds": [
+                20.0,
+                30.0,
+                39.75
+            ]
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<list_sources>
+	<source>
+		<name>meh</name>
+		<size>10</size>
+		<shape></shape>
+		<how></how>
+		<voltage>0.0</voltage>
+		<target_material></target_material>
+		<exit_window_material></exit_window_material>
+		<exit_window_thickness>0.0</exit_window_thickness>
+		<energy_sampling>0.0</energy_sampling>
+		<csv_file></csv_file>
+		<xml_file>xmlFiles/Sources.xml</xml_file>
+	</source>
+</list_sources>

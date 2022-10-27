@@ -1,0 +1,38 @@
+{
+    "Sphere": [
+        {
+            "radii": [
+                8e-05,
+                8e-05,
+                8e-05
+            ],
+            "name": "testing",
+            "materials": [
+                "SpineBone",
+                "Gold"
+            ],
+            "dimensions": [
+                199,
+                199
+            ],
+            "pixel_size": 2e-06
+        }
+    ],
+    "Torus": [
+        {
+            "minor_radius": 4e-05,
+            "major_radius": 8e-05,
+            "name": "testing",
+            "materials": [
+                "Polyethylene",
+                "Gold"
+            ],
+            "dimensions": [
+                199,
+                199
+            ],
+            "pixel_size": 2e-06,
+            "pure_phase": true
+        }
+    ]
+}
