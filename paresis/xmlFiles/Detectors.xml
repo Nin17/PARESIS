@@ -5,7 +5,7 @@
             <dimX>200</dimX>
             <dimY>200</dimY>
         </myDimensions>
-        <myPixelSize unit="um">12</myPixelSize>
+        <myPixelSize unit="um">13.4</myPixelSize>
         <myPSF unit="pixel">1</myPSF>
     </detector>
     

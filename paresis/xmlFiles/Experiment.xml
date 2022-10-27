@@ -56,7 +56,7 @@
         <name>Energies6</name>
         <distSourceToMembrane unit="m">144</distSourceToMembrane>
         <distMembraneToObject unit="m">1.6</distMembraneToObject>
-        <distObjectToDetector unit="m">6</distObjectToDetector>
+        <distObjectToDetector unit="m">3.545</distObjectToDetector>
         <membraneName>Energies6_membrane2_0.edf</membraneName>
         <sampleName>filNylon</sampleName>
         <sampleType>AnalyticalSample</sampleType>

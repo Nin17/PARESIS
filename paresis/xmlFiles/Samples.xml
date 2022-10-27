@@ -56,7 +56,7 @@
         <name>Energies6_membrane2_0.edf</name>
         <myType>membrane</myType>
         <myGeometryFunction>getMembraneFromFile</myGeometryFunction>
-        <myMembraneFile>/Users/chris/Desktop/Fresnel20220508-212900/membrane/</myMembraneFile>
+        <myMembraneFile>/Users/chris/Desktop/DATA/RayT20221026-142218/membrane/</myMembraneFile>
         <myPMMAThickness unit="um">4000</myPMMAThickness>
         <myNbOfLayers>2</myNbOfLayers>
         <myMaterials>CuSn,PMMA</myMaterials>
@@ -69,9 +69,9 @@
         <name>filNylon</name>
         <myType>sample_of_interest</myType>
         <myGeometryFunction>CreateSampleCylindre</myGeometryFunction>
-        <myRadius unit="um">100</myRadius>
+        <myRadius unit="um">1000</myRadius>
         <myOrientation unit="degree">10</myOrientation> 
-        <myMaterials>Nylon</myMaterials>
+        <myMaterials>CorticalBone</myMaterials>
     </sample>
     
     <sample>

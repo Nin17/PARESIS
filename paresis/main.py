@@ -142,14 +142,14 @@ def main(experiment_name, sample_sampling, nb_exp_points, margin,
                              f"white/white_{exp_dict['expID']}" +
                              '_.edf')
 
-    if multiprocessing['positions']:
-        with mp.Pool(processes=4) as pool:  # TODO choose a better number
-            pool.map(_parallel_positions, range(exp_dict['nbExpPoints']))
-            pool.close()
-            pool.join()
-    else:
-        for i in range(exp_dict['nbExpPoints']):
-            _parallel_positions(i)
+    # if multiprocessing['positions']:
+    #     with mp.Pool(processes=4) as pool:  # TODO choose a better number
+    #         pool.map(_parallel_positions, range(exp_dict['nbExpPoints']))
+    #         pool.close()
+    #         pool.join()
+    # else:
+    for i in range(exp_dict['nbExpPoints']):
+        _parallel_positions(i)
 
     if save:
         experiment.saveAllParameters(time0, exp_dict)
@@ -157,6 +157,6 @@ def main(experiment_name, sample_sampling, nb_exp_points, margin,
 
 
 if __name__ == '__main__': 
-    main("Energies6", sample_sampling=3, nb_exp_points=12, margin=10,
-         simulation_type='Fresnel', filepath='/Users/chris/Desktop/',
+    main("Energies6", sample_sampling=3, nb_exp_points=5, margin=10,
+         simulation_type='RayT', filepath='/Users/chris/Desktop/DATA/',
          save=True, multiprocessing={'positions': False, 'energies': False})
